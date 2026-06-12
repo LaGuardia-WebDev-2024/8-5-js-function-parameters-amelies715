@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Portfolio Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .hero-home h1 {
+        font-size: clamp(3.2rem, 13vw, 8.5rem);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">amelie <span>lucille</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Unit 8 Lesson</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-  <style>
-  
-  </style>
-</head>
+    <header class="hero hero-home">
+      <span class="label reveal">singer-songwriter &mdash; new york city</span>
+      <h1 class="reveal d1">amelie <span>lucille</span></h1>
+      <p class="reveal d2">
+        seventeen. writes on guitar. raised on her dad's record collection
+        and the noise of the city — currently at LaGuardia High School.
+      </p>
+      <a href="music.html" class="btn reveal d3">Listen to the music <span class="arr">&rarr;</span></a>
+      <span class="ornament reveal d3">&#10038; &#10038; &#10038;</span>
+    </header>
 
-<body>
-  <h1>Unit 8 - JS Interaction, Text &amp Functions </h1>
-  <h2>8.5 JS Function Parameters</h2>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>foolove</span><span class="star">&#10038;</span>
+        <span>polar</span><span class="star">&#10038;</span>
+        <span>back to her</span><span class="star">&#10038;</span>
+        <span>live at the bitter end</span><span class="star">&#10038;</span>
+        <span>written on guitar</span><span class="star">&#10038;</span>
+        <span>made in nyc</span><span class="star">&#10038;</span>
+        <span>foolove</span><span class="star">&#10038;</span>
+        <span>polar</span><span class="star">&#10038;</span>
+        <span>back to her</span><span class="star">&#10038;</span>
+        <span>live at the bitter end</span><span class="star">&#10038;</span>
+        <span>written on guitar</span><span class="star">&#10038;</span>
+        <span>made in nyc</span><span class="star">&#10038;</span>
+      </div>
+    </div>
 
-  <canvas id="myCanvas" data-processing-sources="myP5Code.pde">
-  </canvas>
+    <section>
+      <div class="bio-quote reveal">
+        <blockquote>
+          i am the product of a nyc childhood and my dad's impeccable music
+          taste — thank you for being here :)
+        </blockquote>
+        <cite>from her spotify bio</cite>
+      </div>
+    </section>
 
-</body>
+    <section>
+      <div class="section-head reveal">
+        <span class="label">( 01 )</span>
+        <h2>hello, <em>hi</em></h2>
+      </div>
+      <div class="split">
+        <figure class="photo-frame reveal">
+          <div class="ph">
+            <img src="images/amelie-1.jpg" alt="Amelie Lucille singing with her guitar under blue stage light" onerror="this.style.display='none'" />
+          </div>
+          <span class="placeholder">add a photo here<br />(images/amelie-1.jpg)</span>
+          <figcaption>onstage, eyes closed</figcaption>
+        </figure>
+        <div class="reveal d1">
+          <p>
+            I'm Amelie — a 17-year-old singer-songwriter from New York City.
+            Most of my songs start the same way: just me, a guitar, and
+            whatever the city left me with that day.
+          </p>
+          <p>
+            This site is home to my music and my story, and a way to reach me
+            if you want to collaborate, book a show, or just say hi.
+          </p>
+          <a href="about.html" class="btn ghost">More about me <span class="arr">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <p class="big">amelie <em>lucille</em></p>
+      <p class="thanks">thank you for being here :)</p>
+      <div class="links">
+        <a href="https://open.spotify.com/artist/5BNec1RUFoU3AoKdxm1USi" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.instagram.com/amelie___lucille/" target="_blank" rel="noopener">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="fine">&copy; 2026 amelie lucille &mdash; made in nyc</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
-<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
